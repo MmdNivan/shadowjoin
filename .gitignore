@@ -1,8 +1,22 @@
+# Sensitive credentials & environment
 .env
+.env.*
+!.env.example
+
+# Telegram session files (DO NOT COMMIT!)
+sessions/
+*.session
+*.session-journal
+
+# Python Virtual Environment & Caches
 .venv/
+venv/
 __pycache__/
 .pytest_cache/
 *.py[cod]
-*.session
-*.session-journal
+
+# Data files (joined channels history)
 data/
+
+# Editor files
+.vscode/
